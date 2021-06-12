@@ -1,4 +1,4 @@
-package io.example.shorcuts
+package io.tohure.shorcuts
 
 import org.junit.Test
 
