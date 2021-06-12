@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="io.tohure.shorcuts.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_flowOneFragment"
+            app:destination="@id/flowOneFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_flowTwoFragment"
+            app:destination="@id/flowTwoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_flowThreeFragment"
+            app:destination="@id/flowThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowOneFragment"
+        android:name="io.tohure.shorcuts.FlowOneFragment"
+        android:label="fragment_flow_one"
+        tools:layout="@layout/fragment_flow_one" />
+    <fragment
+        android:id="@+id/flowThreeFragment"
+        android:name="io.tohure.shorcuts.FlowThreeFragment"
+        android:label="fragment_flow_three"
+        tools:layout="@layout/fragment_flow_three" />
+    <fragment
+        android:id="@+id/flowTwoFragment"
+        android:name="io.tohure.shorcuts.flowTwo.FlowTwoFragment"
+        android:label="fragment_flow_two"
+        tools:layout="@layout/fragment_flow_two" />
+</navigation>

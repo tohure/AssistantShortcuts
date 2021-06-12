@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assistant Shorcuts</string>
+    <string name="it_support">Soporte Técnico</string>
+    <string name="call_button">Llamar</string>
+
+    <string name="fact_1">Google I/O 21 was Amazing!</string>
+    <string name="fact_2">What\'s new in Android</string>
+    <string name="fact_3">What\'s new in Google Play</string>
+    <string name="fact_4">What\'s new in Android TV and Google TV</string>
+    <string name="fact_5">Local development using the new Storage Emulator</string>
+    <string name="fact_6">How to drive conversions with Google Pay for Android</string>
+    <string name="fact_7">Android shortcuts for Assistant</string>
+    <string name="fact_8">How to voicify your Android app</string>
+    <string name="fact_9">The women building voice AI and their role in the voice revolution</string>
+    <string name="fact_10">Women in Voice Meetup</string>
+    <string name="fact_11">Extend an Android app to Google Assistant with App Actions</string>
+    <string name="fact_12">What\'s new in Google Assistant</string>
+    <string name="fact_13">Driving a successful launch for Conversational Actions</string>
+    <string name="fact_14">How the Assistant Investment Program can help fund your startup</string>
+    <string name="fact_15">Games on Google Assistant</string>
+    <string name="fact_16">Assistant GDE Meetup</string>
+    <string name="fact_17">Top 12 tips to get ready for Android 12</string>
+    <string name="fact_18">The state of Android Security</string>
+    <string name="fact_19">Jetpack Compose basics</string>
+    <string name="fact_20">What\'s new in Android Accessibility</string>
+    <string name="title_label">Título</string>
+    <string name="body_label">Nota</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
