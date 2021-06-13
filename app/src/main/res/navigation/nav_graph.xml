@@ -8,7 +8,7 @@
         android:id="@+id/menuFragment"
         android:name="io.tohure.shortcuts.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
+        tools:layout="@layout/fragment_menu">
         <action
             android:id="@+id/action_menuFragment_to_flowOneFragment"
             app:destination="@id/flowOneFragment" />
@@ -23,7 +23,9 @@
         android:id="@+id/flowOneFragment"
         android:name="io.tohure.shortcuts.FlowOneFragment"
         android:label="fragment_flow_one"
-        tools:layout="@layout/fragment_flow_one" />
+        tools:layout="@layout/fragment_flow_one">
+        <deepLink app:uri="shortcutapp://write_note_entry" />
+    </fragment>
     <fragment
         android:id="@+id/flowThreeFragment"
         android:name="io.tohure.shortcuts.FlowThreeFragment"

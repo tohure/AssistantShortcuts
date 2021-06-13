@@ -10,9 +10,10 @@
         android:shortcutDisabledMessage="@string/write_note_disabled_label_shortcut"
         tools:targetApi="n_mr1">
         <intent
-            android:action="android.intent.action.VIEW"
+            android:action="android.intent.action.FLOW_ONE"
             android:targetPackage="io.tohure.shortcuts"
-            android:targetClass="io.tohure.shortcuts.MainActivity" />
+            android:targetClass="io.tohure.shortcuts.MainActivity"
+            android:data="shortcutapp://write_note_entry"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>

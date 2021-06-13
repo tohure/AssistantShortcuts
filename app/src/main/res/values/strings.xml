@@ -25,9 +25,12 @@
     <string name="fact_20">What\'s new in Android Accessibility</string>
     <string name="title_label">Título</string>
     <string name="body_label">Nota</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="write_note_short_label_shortcut">Nueva Nota</string>
     <string name="write_note_long_label_shortcut">Escribir nueva nota</string>
     <string name="write_note_disabled_label_shortcut">Hay un problema</string>
+
+    <string name="action_flow_one">android.intent.action.FLOW_ONE</string>
+    <string name="action_flow_two">android.intent.action.FLOW_TWO</string>
+    <string name="action_flow_three">android.intent.action.FLOW_THREE</string>
 </resources>
