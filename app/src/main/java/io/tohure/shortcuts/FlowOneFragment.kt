@@ -1,15 +1,15 @@
-package io.tohure.shorcuts.flowTwo
+package io.tohure.shortcuts
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import io.tohure.shorcuts.databinding.FragmentFlowTwoBinding
+import io.tohure.shortcuts.databinding.FragmentFlowOneBinding
 
-class FlowTwoFragment : Fragment() {
+class FlowOneFragment : Fragment() {
 
-    private var _binding: FragmentFlowTwoBinding? = null
+    private var _binding: FragmentFlowOneBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,14 +17,7 @@ class FlowTwoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentFlowTwoBinding.inflate(inflater, container, false)
-
-        binding.rvFacts.apply {
-            adapter = FactAdapter(Datasource.loadFacts())
-            setHasFixedSize(true)
-        }
-
+        _binding = FragmentFlowOneBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fact_title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="7dp"
-    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-    tools:text="@string/fact_1" />
+    android:layout_margin="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="3dp">
+
+    <TextView
+        android:id="@+id/fact_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="@string/fact_1" />
+
+</com.google.android.material.card.MaterialCardView>

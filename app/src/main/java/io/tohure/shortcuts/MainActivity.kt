@@ -1,4 +1,4 @@
-package io.tohure.shorcuts
+package io.tohure.shortcuts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

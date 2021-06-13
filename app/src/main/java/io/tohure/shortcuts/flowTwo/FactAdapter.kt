@@ -1,11 +1,11 @@
-package io.tohure.shorcuts.flowTwo
+package io.tohure.shortcuts.flowTwo
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import io.tohure.shorcuts.R
+import io.tohure.shortcuts.R
 
 class FactAdapter(private val listFacts: List<Fact>) :
     RecyclerView.Adapter<FactAdapter.FactViewHolder>() {

@@ -1,4 +1,4 @@
-package io.tohure.shorcuts
+package io.tohure.shortcuts
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import io.tohure.shorcuts.databinding.FragmentFlowOneBinding
-import io.tohure.shorcuts.databinding.FragmentMenuBinding
+import io.tohure.shortcuts.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
 

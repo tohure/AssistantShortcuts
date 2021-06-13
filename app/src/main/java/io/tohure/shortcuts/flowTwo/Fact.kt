@@ -1,3 +1,3 @@
-package io.tohure.shorcuts.flowTwo
+package io.tohure.shortcuts.flowTwo
 
 data class Fact (val strResId: Int)

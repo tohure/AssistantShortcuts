@@ -27,4 +27,7 @@
     <string name="body_label">Nota</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="write_note_short_label_shortcut">Nueva Nota</string>
+    <string name="write_note_long_label_shortcut">Escribir nueva nota</string>
+    <string name="write_note_disabled_label_shortcut">Hay un problema</string>
 </resources>
