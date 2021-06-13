@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Shorcuts">
+        android:theme="@style/Theme.Shortcuts">
         <activity android:name="io.tohure.shortcuts.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
