@@ -27,17 +27,17 @@
         <deepLink app:uri="shortcutapp://write_note_entry" />
     </fragment>
     <fragment
-        android:id="@+id/flowThreeFragment"
-        android:name="io.tohure.shortcuts.FlowThreeFragment"
-        android:label="fragment_flow_three"
-        tools:layout="@layout/fragment_flow_three">
-        <deepLink app:uri="shortcutapp://call_support_center" />
-    </fragment>
-    <fragment
         android:id="@+id/flowTwoFragment"
         android:name="io.tohure.shortcuts.flowTwo.FlowTwoFragment"
         android:label="fragment_flow_two"
         tools:layout="@layout/fragment_flow_two">
         <deepLink app:uri="shortcutapp://view_list_news" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowThreeFragment"
+        android:name="io.tohure.shortcuts.FlowThreeFragment"
+        android:label="fragment_flow_three"
+        tools:layout="@layout/fragment_flow_three">
+        <deepLink app:uri="shortcutapp://call_support_center" />
     </fragment>
 </navigation>

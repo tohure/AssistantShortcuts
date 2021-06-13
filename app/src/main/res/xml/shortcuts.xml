@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:targetApi="n_mr1">
     <shortcut
         android:shortcutId="note"
         android:enabled="true"
         android:icon="@mipmap/ic_write_note"
         android:shortcutShortLabel="@string/write_note_short_label_shortcut"
         android:shortcutLongLabel="@string/write_note_long_label_shortcut"
-        android:shortcutDisabledMessage="@string/write_note_disabled_label_shortcut"
-        tools:targetApi="n_mr1">
+        android:shortcutDisabledMessage="@string/disabled_label_shortcut">
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="io.tohure.shortcuts"
             android:targetClass="io.tohure.shortcuts.MainActivity"
             android:data="shortcutapp://write_note_entry"/>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="news"
+        android:enabled="true"
+        android:icon="@mipmap/ic_list_news"
+        android:shortcutShortLabel="@string/list_news_short_label_shortcut"
+        android:shortcutLongLabel="@string/list_news_long_label_shortcut"
+        android:shortcutDisabledMessage="@string/disabled_label_shortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.tohure.shortcuts"
+            android:targetClass="io.tohure.shortcuts.MainActivity"
+            android:data="shortcutapp://view_list_news"/>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="support"
+        android:enabled="true"
+        android:icon="@mipmap/ic_call_support"
+        android:shortcutShortLabel="@string/call_support_short_label_shortcut"
+        android:shortcutLongLabel="@string/call_support_long_label_shortcut"
+        android:shortcutDisabledMessage="@string/disabled_label_shortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.tohure.shortcuts"
+            android:targetClass="io.tohure.shortcuts.MainActivity"
+            android:data="shortcutapp://call_support_center"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>
