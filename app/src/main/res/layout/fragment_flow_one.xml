@@ -27,7 +27,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tfBody"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/body_label"
         app:layout_constraintEnd_toEndOf="@+id/tfTitle"
@@ -36,8 +36,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="textMultiLine" />
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="5"
+            android:lines="10" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
