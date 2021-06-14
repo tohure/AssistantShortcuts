@@ -1,6 +1,7 @@
 package io.tohure.shortcuts.flowTwo
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,9 +33,10 @@ class FlowTwoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        activity?.intent?.extras?.let {
-            Toast.makeText(context, it.getString("aboutName"), Toast.LENGTH_SHORT).show()
-        }
+        val newQuery = activity?.intent?.extras?.getString("aboutName")?: ""
+
+        Log.d("tohure", newQuery)
+        Toast.makeText(context, newQuery, Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroyView() {

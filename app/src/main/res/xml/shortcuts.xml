@@ -44,6 +44,11 @@
             android:targetClass="io.tohure.shortcuts.MainActivity"
             android:data="shortcutapp://call_support_center"/>
         <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:value="featureParam"
+                android:key="feature"/>
+        </capability-binding>
     </shortcut>
     <!--</editor-fold>-->
     <!--<editor-fold desc="Capabilities">-->
@@ -56,6 +61,16 @@
             <parameter
                 android:name="newsArticle.about.name"
                 android:key="aboutName"/>
+        </intent>
+    </capability>
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:targetPackage="io.tohure.shortcuts"
+            android:targetClass="io.tohure.shortcuts.MainActivity"
+            android:data="shortcutapp://call_support_center">
+            <parameter
+                android:name="feature"
+                android:key="featureParam"/>
         </intent>
     </capability>
     <!--</editor-fold>-->
