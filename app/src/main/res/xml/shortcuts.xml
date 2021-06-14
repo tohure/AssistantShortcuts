@@ -2,6 +2,7 @@
 <shortcuts xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:targetApi="n_mr1">
+    <!--<editor-fold desc="Shortcuts">-->
     <shortcut
         android:shortcutId="note"
         android:enabled="true"
@@ -44,4 +45,18 @@
             android:data="shortcutapp://call_support_center"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+    <!--</editor-fold>-->
+    <!--<editor-fold desc="Capabilities">-->
+    <capability android:name="actions.intent.GET_NEWS_ARTICLE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.tohure.shortcuts"
+            android:targetClass="io.tohure.shortcuts.MainActivity"
+            android:data="shortcutapp://view_list_news">
+            <parameter
+                android:name="newsArticle.about.name"
+                android:key="aboutName"/>
+        </intent>
+    </capability>
+    <!--</editor-fold>-->
 </shortcuts>
