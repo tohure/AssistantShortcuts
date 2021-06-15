@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="support_synonyms">
+        <item>support</item>
+        <item>technical support</item>
+        <item>support center</item>
+    </array>
+
+    <array name="time_synonyms">
+        <item>time</item>
+        <item>current time</item>
+        <item>time today</item>
+    </array>
+
+</resources>

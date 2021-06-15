@@ -35,4 +35,5 @@
     <string name="call_support_long_label_shortcut">Llamar Soporte Técnico</string>
 
     <string name="disabled_label_shortcut">Hay un problema</string>
+    <string name="time_short_label_shortcut">Tiempo</string>
 </resources>

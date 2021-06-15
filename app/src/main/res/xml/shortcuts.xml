@@ -44,11 +44,6 @@
             android:targetClass="io.tohure.shortcuts.MainActivity"
             android:data="shortcutapp://call_support_center"/>
         <categories android:name="android.shortcut.conversation" />
-        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
-            <parameter-binding
-                android:value="featureParam"
-                android:key="feature"/>
-        </capability-binding>
     </shortcut>
     <!--</editor-fold>-->
     <!--<editor-fold desc="Capabilities">-->
@@ -63,15 +58,39 @@
                 android:key="aboutName"/>
         </intent>
     </capability>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Shortcuts binding to a Capability">-->
     <capability android:name="actions.intent.OPEN_APP_FEATURE">
         <intent
             android:targetPackage="io.tohure.shortcuts"
-            android:targetClass="io.tohure.shortcuts.MainActivity"
-            android:data="shortcutapp://call_support_center">
+            android:targetClass="io.tohure.shortcuts.MainActivity">
             <parameter
                 android:name="feature"
                 android:key="featureParam"/>
         </intent>
     </capability>
+
+    <shortcut
+        android:shortcutId="supportBinding"
+        android:shortcutShortLabel="@string/call_support_short_label_shortcut"
+        android:enabled="false">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:value="@array/support_synonyms"
+                android:key="feature"/>
+        </capability-binding>
+    </shortcut>
+    <shortcut
+        android:shortcutId="viewTime"
+        android:shortcutShortLabel="@string/time_short_label_shortcut"
+        android:enabled="false">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:value="@array/time_synonyms"
+                android:key="feature"/>
+        </capability-binding>
+    </shortcut>
     <!--</editor-fold>-->
+
 </shortcuts>
