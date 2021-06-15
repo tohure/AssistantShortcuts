@@ -33,10 +33,10 @@ class FlowTwoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val newQuery = activity?.intent?.extras?.getString("aboutName")?: ""
+        val newQuery = activity?.intent?.extras?.getString("aboutName") ?: ""
 
         Log.d("tohure", newQuery)
-        Toast.makeText(context, newQuery, Toast.LENGTH_SHORT).show()
+        if (newQuery.isNotEmpty()) Toast.makeText(context, newQuery, Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroyView() {

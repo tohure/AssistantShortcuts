@@ -1,7 +1,6 @@
 package io.tohure.shortcuts
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +8,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import io.tohure.shortcuts.databinding.FragmentMenuBinding
-import java.text.SimpleDateFormat
-import java.util.*
+import java.text.DateFormat
+import java.util.Date
 
 private const val SUPPORT_FEATURE = "supportBinding"
 private const val TIME_FEATURE = "viewTime"
 
-private const val PARAM_FEATURE = "featureParam"
+const val PARAM_FEATURE = "featureParam"
 
 class MenuFragment : Fragment() {
 
@@ -37,9 +36,7 @@ class MenuFragment : Fragment() {
     }
 
     private fun manageAppFeature() {
-        val newQueryFeature = "${activity?.intent?.extras?.getString(PARAM_FEATURE)}"
-
-        Log.d("tohure", newQueryFeature)
+        val newQueryFeature = "${requireActivity().intent?.extras?.getString(PARAM_FEATURE)}"
 
         when (newQueryFeature) {
             SUPPORT_FEATURE -> findNavController().navigate(R.id.flowThreeFragment)
@@ -48,23 +45,22 @@ class MenuFragment : Fragment() {
     }
 
     private fun callTimeDialog() {
-        val builder: AlertDialog.Builder? = activity?.let {
+        val builder = activity?.let {
             AlertDialog.Builder(it)
         }
 
-        val sdf = SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z")
-        val currentDateandTime: String = sdf.format(Date())
+        val dateInstance = DateFormat.getDateInstance(DateFormat.LONG)
+        val currentDateAndTime = dateInstance.format(Date())
 
+        builder?.setMessage(currentDateAndTime)
+            ?.setTitle("The Current time!")
 
-        builder?.setMessage(currentDateandTime)
-            ?.setTitle("The time!")
         val dialog: AlertDialog? = builder?.create()
 
         dialog?.show()
     }
 
     private fun setupClicks() {
-
         binding.btnNote.setOnClickListener {
             findNavController().navigate(R.id.flowOneFragment)
         }
@@ -76,7 +72,6 @@ class MenuFragment : Fragment() {
         binding.btnSupport.setOnClickListener {
             findNavController().navigate(R.id.flowThreeFragment)
         }
-
     }
 
     override fun onDestroyView() {

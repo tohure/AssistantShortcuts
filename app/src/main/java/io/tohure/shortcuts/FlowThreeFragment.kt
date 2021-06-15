@@ -26,6 +26,7 @@ class FlowThreeFragment : Fragment() {
             startActivity(callIntent)
         }
 
+        requireActivity().intent.removeExtra(PARAM_FEATURE)
         return binding.root
     }
 

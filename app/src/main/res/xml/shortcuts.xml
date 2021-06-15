@@ -46,6 +46,7 @@
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <!--</editor-fold>-->
+
     <!--<editor-fold desc="Capabilities">-->
     <capability android:name="actions.intent.GET_NEWS_ARTICLE">
         <intent
@@ -92,5 +93,4 @@
         </capability-binding>
     </shortcut>
     <!--</editor-fold>-->
-
 </shortcuts>
