@@ -12,7 +12,6 @@ import com.google.assistant.appactions.suggestions.client.AppShortcutIntent
 import com.google.assistant.appactions.suggestions.client.AppShortcutSuggestion
 import com.google.assistant.appactions.suggestions.client.AssistantShortcutSuggestionsClient
 
-
 class FlowFourthFragment : Fragment() {
 
     lateinit var appShortcutIntent : AppShortcutIntent
@@ -45,7 +44,7 @@ class FlowFourthFragment : Fragment() {
         shortcutsClient.lookupShortcut(appShortcutIntent)
             .addOnSuccessListener {
                 if (it.isShortcutPresent) {
-                    Toast.makeText(requireContext(), "Shortcut can be remembered", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Recuerda que puedes acceder a este feature por Google Assistant :)", Toast.LENGTH_SHORT).show()
                     // app can remind that the user has a shortcut for this app action
                 } else {
                     suggestShortcut()
@@ -72,7 +71,7 @@ class FlowFourthFragment : Fragment() {
             }
             .addOnFailureListener {
                 Toast.makeText(requireContext(), "Shortcut suggest Failed", Toast.LENGTH_SHORT).show()
-                Log.e("tohure", "Shortcut lookup failed", it)
+                Log.e("tohure", "Shortcut suggest failed", it)
             }
 
     }
