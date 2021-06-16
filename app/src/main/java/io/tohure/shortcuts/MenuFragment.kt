@@ -13,6 +13,7 @@ import java.util.Date
 
 private const val SUPPORT_FEATURE = "supportBinding"
 private const val TIME_FEATURE = "viewTime"
+private const val ASSISTANT_FEATURE = "assistant"
 
 const val PARAM_FEATURE = "featureParam"
 
@@ -40,6 +41,7 @@ class MenuFragment : Fragment() {
 
         when (newQueryFeature) {
             SUPPORT_FEATURE -> findNavController().navigate(R.id.flowThreeFragment)
+            ASSISTANT_FEATURE -> findNavController().navigate(R.id.flowFourthFragment)
             TIME_FEATURE -> callTimeDialog()
         }
     }
@@ -71,6 +73,10 @@ class MenuFragment : Fragment() {
 
         binding.btnSupport.setOnClickListener {
             findNavController().navigate(R.id.flowThreeFragment)
+        }
+
+        binding.fbAssistant.setOnClickListener {
+            findNavController().navigate(R.id.flowFourthFragment)
         }
     }
 

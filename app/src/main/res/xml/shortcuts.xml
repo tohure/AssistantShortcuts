@@ -92,5 +92,15 @@
                 android:key="feature"/>
         </capability-binding>
     </shortcut>
+    <shortcut
+        android:shortcutId="assistant"
+        android:shortcutShortLabel="@string/assistant_short_label_shortcut"
+        android:enabled="false">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:value="@array/assistant_synonyms"
+                android:key="feature"/>
+        </capability-binding>
+    </shortcut>
     <!--</editor-fold>-->
 </shortcuts>

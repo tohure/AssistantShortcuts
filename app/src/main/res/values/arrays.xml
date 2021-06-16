@@ -12,4 +12,10 @@
         <item>time today</item>
     </array>
 
+    <array name="assistant_synonyms">
+        <item>assistant</item>
+        <item>personal assistant</item>
+        <item>assistant app</item>
+    </array>
+
 </resources>

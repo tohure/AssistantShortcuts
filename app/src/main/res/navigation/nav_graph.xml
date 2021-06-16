@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_menuFragment_to_flowThreeFragment"
             app:destination="@id/flowThreeFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_flowFourthFragment"
+            app:destination="@id/flowFourthFragment" />
     </fragment>
     <fragment
         android:id="@+id/flowOneFragment"
@@ -40,4 +43,9 @@
         tools:layout="@layout/fragment_flow_three">
         <deepLink app:uri="shortcutapp://call_support_center" />
     </fragment>
+    <fragment
+        android:id="@+id/flowFourthFragment"
+        android:name="io.tohure.shortcuts.FlowFourthFragment"
+        android:label="fragment_flow_fourth"
+        tools:layout="@layout/fragment_flow_fourth" />
 </navigation>
