@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import io.tohure.shortcuts.databinding.FragmentMenuBinding
 import java.text.DateFormat
-import java.util.Date
+import java.util.*
 
 private const val SUPPORT_FEATURE = "supportBinding"
 private const val TIME_FEATURE = "viewTime"
