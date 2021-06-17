@@ -22,7 +22,7 @@ class FlowThreeFragment : Fragment() {
         _binding = FragmentFlowThreeBinding.inflate(inflater, container, false)
 
         binding.btnCall.setOnClickListener {
-            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:941930244"))
+            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:999999999"))
             startActivity(callIntent)
         }
 

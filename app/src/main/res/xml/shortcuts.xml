@@ -2,6 +2,7 @@
 <shortcuts xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:targetApi="n_mr1">
+
     <shortcut
         android:shortcutId="note"
         android:enabled="true"
@@ -16,6 +17,7 @@
             android:data="shortcutapp://write_note_entry"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+
     <shortcut
         android:shortcutId="news"
         android:enabled="true"
@@ -30,6 +32,7 @@
             android:data="shortcutapp://view_list_news"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+
     <shortcut
         android:shortcutId="support"
         android:enabled="true"
@@ -44,4 +47,5 @@
             android:data="shortcutapp://call_support_center"/>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+
 </shortcuts>

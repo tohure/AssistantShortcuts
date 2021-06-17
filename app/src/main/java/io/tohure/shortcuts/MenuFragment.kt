@@ -1,6 +1,5 @@
 package io.tohure.shortcuts
 
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,7 +27,6 @@ class MenuFragment : Fragment() {
     }
 
     private fun setupClicks() {
-
         binding.btnNote.setOnClickListener {
             findNavController().navigate(R.id.flowOneFragment)
         }
@@ -40,7 +38,6 @@ class MenuFragment : Fragment() {
         binding.btnSupport.setOnClickListener {
             findNavController().navigate(R.id.flowThreeFragment)
         }
-
     }
 
     override fun onDestroyView() {
