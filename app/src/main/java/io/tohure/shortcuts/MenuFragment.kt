@@ -1,4 +1,4 @@
-package io.tohure.shorcuts
+package io.tohure.shortcuts
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import io.tohure.shorcuts.databinding.FragmentFlowOneBinding
-import io.tohure.shorcuts.databinding.FragmentMenuBinding
+import io.tohure.shortcuts.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
 
@@ -19,27 +18,26 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
-        setupClicks()
         return binding.root
     }
 
-    private fun setupClicks() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupClicks()
+    }
 
+    private fun setupClicks() {
         binding.btnNote.setOnClickListener {
-            val action = MenuFragmentDirections.actionMenuFragmentToFlowOneFragment()
-            findNavController().navigate(action)
+            findNavController().navigate(R.id.flowOneFragment)
         }
 
         binding.btnNews.setOnClickListener {
-            val action = MenuFragmentDirections.actionMenuFragmentToFlowTwoFragment()
-            findNavController().navigate(action)
+            findNavController().navigate(R.id.flowTwoFragment)
         }
 
         binding.btnSupport.setOnClickListener {
-            val action = MenuFragmentDirections.actionMenuFragmentToFlowThreeFragment()
-            findNavController().navigate(action)
+            findNavController().navigate(R.id.flowThreeFragment)
         }
-
     }
 
     override fun onDestroyView() {

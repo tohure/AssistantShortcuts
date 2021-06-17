@@ -1,6 +1,6 @@
-package io.tohure.shorcuts.flowTwo
+package io.tohure.shortcuts.flowTwo
 
-import io.tohure.shorcuts.R
+import io.tohure.shortcuts.R
 
 object Datasource {
     fun loadFacts(): List<Fact> {

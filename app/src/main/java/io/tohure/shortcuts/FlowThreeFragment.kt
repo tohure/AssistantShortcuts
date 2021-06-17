@@ -1,4 +1,4 @@
-package io.tohure.shorcuts
+package io.tohure.shortcuts
 
 import android.content.Intent
 import android.net.Uri
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import io.tohure.shorcuts.databinding.FragmentFlowThreeBinding
+import io.tohure.shortcuts.databinding.FragmentFlowThreeBinding
 
 class FlowThreeFragment : Fragment() {
 
@@ -22,7 +22,7 @@ class FlowThreeFragment : Fragment() {
         _binding = FragmentFlowThreeBinding.inflate(inflater, container, false)
 
         binding.btnCall.setOnClickListener {
-            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:941930244"))
+            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:999999999"))
             startActivity(callIntent)
         }
 

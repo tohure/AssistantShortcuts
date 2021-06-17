@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Assistant Shorcuts</string>
+    <string name="app_name">Assistant Shortcuts</string>
+
     <string name="it_support">Soporte Técnico</string>
     <string name="call_button">Llamar</string>
 
@@ -23,8 +24,7 @@
     <string name="fact_18">The state of Android Security</string>
     <string name="fact_19">Jetpack Compose basics</string>
     <string name="fact_20">What\'s new in Android Accessibility</string>
+
     <string name="title_label">Título</string>
     <string name="body_label">Nota</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
