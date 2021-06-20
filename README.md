@@ -18,6 +18,7 @@ El orden sería:
   3. [ShortcutCapabilities](https://github.com/Tohure/AssistantShortcuts/tree/ShortcutCapabilities) : Rama donde se integran los clásicos **Shortcuts** de Android y las acciones de voz **App Actions** con el nuevo **Capabilities API** anunciados en el reciente *Google I/O 21*. 
   
 	  > Capabilities: https://developer.android.com/guide/topics/ui/shortcuts/adding-capabilities
+	  
 	  > App Actions: https://developers.google.com/assistant/app/overview
 
 4. [CapabilitiesInAppPromo](https://github.com/Tohure/AssistantShortcuts/tree/CapabilitiesInAppPromo) : Rama donde usaremos **In-App Promo SDK** para hacer sugerencias directamente en la aplicación del uso o llamado de un flujo específico con Google Assistant.
